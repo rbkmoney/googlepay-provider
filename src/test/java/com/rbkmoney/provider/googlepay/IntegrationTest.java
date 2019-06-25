@@ -21,9 +21,6 @@ import java.time.Instant;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by vpankrashkin on 29.05.18.
- */
 @RunWith(SpringRunner.class)
 @SpringBootTest(
         webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT

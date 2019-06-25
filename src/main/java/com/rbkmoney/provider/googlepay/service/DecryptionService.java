@@ -18,7 +18,7 @@ public class DecryptionService {
         try {
             return decryptor.unseal(paymentToken);
         } catch (GeneralSecurityException | IllegalArgumentException e) {
-            throw new CryptoException("Message decryption failed: "+e.getMessage(), e);
+            throw new CryptoException("Message decryption failed", e);
         }
     }
 }

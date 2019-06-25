@@ -22,9 +22,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Optional;
 
-/**
- * Created by vpankrashkin on 03.04.18.
- */
 public class ProviderHandler implements PaymentToolProviderSrv.Iface {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 

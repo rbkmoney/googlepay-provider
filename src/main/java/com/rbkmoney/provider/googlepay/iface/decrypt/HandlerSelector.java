@@ -10,9 +10,6 @@ import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-/**
- * Created by vpankrashkin on 18.06.18.
- */
 public class HandlerSelector implements PaymentToolProviderSrv.Iface {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
