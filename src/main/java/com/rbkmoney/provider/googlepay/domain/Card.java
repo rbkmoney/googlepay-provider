@@ -2,11 +2,12 @@ package com.rbkmoney.provider.googlepay.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @Setter
-@ToString(exclude = {"pan", "expirationMonth", "expirationYear"})
 @NoArgsConstructor
 public class Card extends PaymentCredential {
 
@@ -22,6 +23,15 @@ public class Card extends PaymentCredential {
         this.pan = pan;
         this.expirationMonth = expirationMonth;
         this.expirationYear = expirationYear;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "pan='" + (pan == null ? null : "***") + '\'' +
+                ", expirationMonth=" + "**" +
+                ", expirationYear=" + "****" +
+                '}';
     }
 
 }
