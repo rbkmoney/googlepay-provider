@@ -1,18 +1,14 @@
 package com.rbkmoney.provider.googlepay.service;
 
 import com.google.crypto.tink.apps.paymentmethodtoken.PaymentMethodTokenRecipient;
+import lombok.RequiredArgsConstructor;
 
 import java.security.GeneralSecurityException;
 
-/**
- * Created by vpankrashkin on 29.05.18.
- */
+@RequiredArgsConstructor
 public class DecryptionService {
-    private final PaymentMethodTokenRecipient decryptor;
 
-    public DecryptionService(PaymentMethodTokenRecipient decryptor) {
-        this.decryptor = decryptor;
-    }
+    private final PaymentMethodTokenRecipient decryptor;
 
     public String decryptToken(String paymentToken) throws CryptoException {
         try {

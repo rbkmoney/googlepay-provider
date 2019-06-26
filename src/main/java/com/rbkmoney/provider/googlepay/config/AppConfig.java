@@ -17,9 +17,6 @@ import org.springframework.core.io.Resource;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-/**
- * Created by vpankrashkin on 29.05.18.
- */
 @Configuration
 public class AppConfig {
 

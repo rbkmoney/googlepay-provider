@@ -15,7 +15,7 @@
     <version>1.1.5-SNAPSHOT</version>
 
     <properties>
-        <project.maintainer>Vladimir Pankrashkin &lt;v.pankrashkin@rbkmoney.com&gt;</project.maintainer>
+        <project.maintainer>Nikita Pospolita &lt;n.pospolita@rbkmoney.com&gt;</project.maintainer>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <dockerfile.base.service.tag>2a8b44ac628c1bdb729abd04ed7a2a54676e574b</dockerfile.base.service.tag>
         <damsel.version>1.236-1510cd7</damsel.version>

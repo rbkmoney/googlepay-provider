@@ -3,15 +3,14 @@ package com.rbkmoney.provider.googlepay.iface.decrypt;
 import com.rbkmoney.damsel.base.Content;
 import com.rbkmoney.damsel.base.InvalidRequest;
 import com.rbkmoney.damsel.payment_tool_provider.*;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
+@Slf4j
 public class HandlerSelector implements PaymentToolProviderSrv.Iface {
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private final PaymentToolProviderSrv.Iface test;
     private final PaymentToolProviderSrv.Iface prod;
